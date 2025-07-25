@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Account</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="firebase.js" defer></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <section class="hero">
+    <h2>Create New Account</h2>
+    <form onsubmit="registerAccount(event)">
+      <input type="email" id="registerEmail" placeholder="Email" required><br><br>
+      <input type="password" id="registerPassword" placeholder="Password" required><br><br>
+      <select id="userType">
+        <option value="user">General User</option>
+        <option value="admin">Admin</option>
+      </select><br><br>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+</body>
+</html>
