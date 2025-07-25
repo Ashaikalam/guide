@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Admin Dashboard</h1></header>
+  <section class="hero">
+    <form onsubmit="addManual(event)">
+      <input type="text" id="title" placeholder="Manual Title" required><br><br>
+      <textarea id="steps" placeholder="Step-by-step Instructions" required></textarea><br><br>
+      <input type="file" id="imageUpload"><br><br>
+      <button type="submit">Add Manual</button>
+    </form>
+    <hr>
+    <div id="manualAdminList"></div>
+  </section>
+</body>
+</html>
